@@ -1,49 +1,35 @@
-/*Exercise 26
-        *  UCF COP3330 Fall 2021 Assignment 2 Solution
-        *  Copyright 2021 Monil_Patel
-        */
-package ex26;
-import java.util.*;
-import java.lang.*;
+/* Exercise 26
+ *  UCF COP3330 Fall 2021 Assignment 2 Solution
+ *  Copyright 2021 Monil_Patel
+ */
+package oop.assignment2.ex26;
+import java.util.Scanner;
+import java.lang.Math;
 
-public class App {
-
-    class Ideone
+public class Solution26
+{
+    public static void main (String[] args)
     {
-        public static void main (String[] args) throws java.lang.Exception
-        {
+        // your code goes here
+        Scanner input = new Scanner(System.in);
 
-            Scanner sc=new Scanner(System.in);
+        System.out.print("What is your balance? ");
+        double b;
+        b = input.nextDouble();
 
-            System.out.print("What is your balance? ");
-            double b;
-            b = sc.nextDouble();
-            System.out.println(b);
-
-            System.out.print("What is the APR on the card (as a percent)? ");
-
-            double i;
-            i = sc.nextDouble();
-            System.out.println(i);
-
-            i = (i/365);
+        System.out.print("What is the APR on the card (as a percent)? ");
+        double i;
+        i = input.nextDouble();
+        i = i / 100;
+        i = i / 365;
 
 
-            System.out.print("What is the monthly payment you can make ?");
-            double p;
-            p = sc.nextDouble();
-            System.out.println(p);
+        System.out.print("What is the monthly payment you can make ? ");
+        double p;
+        p = input.nextDouble();
 
-            double result;
-            double power = Math.pow((i+i),30);
-            result = -(1) * (Math.log(1+((b*(1-power))/p)));
+        paymentcalculator obj = new paymentcalculator();
 
-            result = result / 30;
-            result = result / (Math.log(1+i));
-            result = -(result);
-
-            System.out.println("It will take you " + Math.round(result) + " months to pay off this card.");
-        }
+        System.out.printf("It will take you %.0f months to pay off this card.",Math.ceil(obj.calculateMonthsUntilPaidOff(b,i,p)));
     }
-
 }

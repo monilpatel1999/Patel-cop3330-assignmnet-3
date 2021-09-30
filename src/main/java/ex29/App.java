@@ -3,37 +3,58 @@ package ex29;
  *  UCF COP3330 Fall 2021 Assignment 2 Solution
  *  Copyright 2021 Monil_Patel
  */
+package oop.assignment2.ex29;
+import java.util.Scanner;
+import java.lang.String;
 
-public class App {
-    import java.util.*;
-    public class Main
+public class Solution29
+{
+    public static boolean isNumeric(String strNum)
     {
-        public static void main(String args[])
+        if (strNum == null)
         {
-            Scanner sc=new Scanner(System.in);
-            boolean flag=false;
-            while(true)
+            return false;
+        }
+        try
+        {
+            double d = Double.parseDouble(strNum);
+        }
+        catch (NumberFormatException nfe)
+        {
+            return false;
+        }
+        return true;
+    }
+
+    public static void main (String[] args)
+    {
+        // your code goes here
+        Scanner input = new Scanner(System.in);
+        String value;
+        while(true)
+        {
+            System.out.print("What is the rate of return? ");
+            value = input.nextLine();
+
+
+            if((isNumeric(value) == true))
             {
-                try
+                int x = Integer.parseInt(value);
+                if (x != 0)
                 {
-                    System.out.print("What is the rate of return? "); //ask interest rate
-                    int r=Integer.parseInt(sc.next()); //read r
-                    System.out.println("It will take "+(72/r)+" years to double your initial investment.");
-                    flag=true; //if exception not raised,set flag to true
-                }
-                catch(NumberFormatException e) //catch invalid number exception
-                {
-                    System.out.println("Sorry. That's not a valid input");
-                }
-                catch(ArithmeticException e) //catch division by error exception
-                {
-                    System.out.println("Sorry. That's not a valid input");
-                }
-                if(flag) //if exception not raised
-                {
+                    System.out.println("it will take " + (72 / x) + " year to double your initial investment.");
                     break;
                 }
 
+                else
+                {
+                    System.out.println("Sorry this is not a valid input");
+                }
+
+            }
+            else
+            {
+                System.out.println("Sorry this is not a valid input");
             }
         }
     }
