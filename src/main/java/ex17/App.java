@@ -4,10 +4,6 @@
  */
 package ex17;
 public class App {
-    /* Exercise 17
-     *  UCF COP3330 Fall 2021 Assignment 1 Solution
-     *  Copyright 2021 Monil_Patel
-     */
  import java.util.*;
     public class Main
     {
