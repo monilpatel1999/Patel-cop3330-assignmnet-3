@@ -6,10 +6,6 @@ package ex35;
 
 public class App {
     package oop.assignment2.ex35;
-    /*
-     *  UCF COP3330 Summer 2021 Assignment 2 Solution
-     *  Copyright 2021 Ayush Pindoria
-     */
 
 import java.lang.String;
 import java.util.Scanner;
