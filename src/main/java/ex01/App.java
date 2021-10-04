@@ -3,10 +3,6 @@
  *  Copyright 2021 Monil_Patel
  */
 package oop.example;
-/*
- *  UCF COP3330 Summer 2021 Assignment 1 Solution
- *  Copyright 2021 Ayush Pindoria
- */
 import java.util.Scanner;
 
 public class App {
