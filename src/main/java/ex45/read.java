@@ -7,10 +7,11 @@ import java.io.IOException;
 
 public class read {
     package oop.assignment.ex45;
-    /*
-     *  UCF COP3330 Summer 2021 Assignment 3 Solution
-     *  Copyright 2021 Ayush Pindoria
-     */
+      /*
+     Exercise 45
+     *  UCF COP3330 Fall 2021 Assignment 3 Solution
+     *  Copyright 2021 Monil_Patel
+    */
 import java.io.*;
     /*
     ->String line = "", oldtext = ""
