@@ -5,10 +5,11 @@ import java.util.TreeMap;
 
 public class Frequency_Of_String_Words {
     package oop.assignment.ex46;
-    /*
-     *  UCF COP3330 Summer 2021 Assignment 3 Solution
-     *  Copyright 2021 Ayush Pindoria
-     */
+   /* Exercise 46
+ *  UCF COP3330 Fall 2021 Assignment 2 Solution
+ *  Copyright 2021 Monil_Patel
+ */
+pack
 
 import java.util.Map;
 import java.util.TreeMap;
